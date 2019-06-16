@@ -36,7 +36,7 @@ class Game
  
   def winner
     if combo = won?
-      @board.cells[combo[0]] # <-- this is the first index of the winning combo and whatever "input" is detected will return
+      @board.cells[combo[0]] # <-- this is the first index of the winning combo and whatever "input" is on the board at this index, it will return as the winner
     end
   end
   

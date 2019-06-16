@@ -60,7 +60,6 @@ class Game
         elsif draw?
           puts"Cat's Game!"
      end
-  end
   end 
   
   def turn
@@ -71,5 +70,5 @@ class Game
         else 
           turn
         end
-
+    end
   end

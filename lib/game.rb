@@ -63,7 +63,7 @@ class Game
     puts "Please enter 1-9:"
       #user_input = gets
       #index = input_to_i(user_input) 
-        if valid_move?(index)
+        if @board.valid_move?(input)
           move(index, current_player) 
         else 
           turn

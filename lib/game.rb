@@ -19,7 +19,7 @@ class Game
   end
   
  def won?
-  @board.inlude?(WIN_COMBINATIONS)
+  @board.to_i.inlude?(WIN_COMBINATIONS)
     if position(input) == "X"
       player_1
     else

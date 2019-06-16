@@ -19,12 +19,11 @@ class Game
   end
   
  def won?
-  WIN_COMBINATIONS.each do |combo|
-    if @cells[combo[0]] == "X" && @cells[combo[1]] == "X" && @cells[combo[2]] == "X"
-      return combo
-    elsif @cells[combo[0]] == "O" && @cells[combo[1]] == "O" && @cells[combo[2]] == "O"
-      return combo
-    end 
+  @board.inlude?(WIN_COMBINATIONS)
+    if position(input) == "X"
+      player_1
+    else
+      player_2
   end
     false
   end

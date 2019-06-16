@@ -20,7 +20,7 @@ class Game
   
  def won?
   @board == WIN_COMBINATIONS
-    if position == "X"
+    if @position == "X"
       player_1
     else
       player_2

@@ -19,8 +19,7 @@ class Game
   end
   
   def won?
-    if @board == WIN_COMBINATIONS
-      WIN_COMBINATIONS
+    if @board.include?(WIN_COMBINATIONS)
     end 
   end
   

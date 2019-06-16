@@ -18,8 +18,14 @@ class Game
     end
   end
   
+  def draw?
+    if !@cells[WIN_COMBINATIONS]
+      puts "Cat's Game!"
+    end
+  end
+  
   def won?
-    if @board.include?(WIN_COMBINATIONS)
+    if @board
     end 
   end
   

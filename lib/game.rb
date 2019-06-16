@@ -25,7 +25,8 @@ class Game
   end
   
   def won?
-    if @board
+    draw? unless
+      WIN_COMBINATIONS == "X" || WIN_COMBINATIONS == "O"
     end 
   end
   

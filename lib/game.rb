@@ -69,5 +69,5 @@ class Game
           turn
         end
           display_board
-    end
-end
+      end
+  end

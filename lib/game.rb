@@ -19,6 +19,8 @@ class Game
   end
   
   def won?
+    if @board == WIN_COMBINATIONS
+      WIN_COMBINATIONS
   end
   
   def winner

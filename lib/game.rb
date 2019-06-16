@@ -45,6 +45,9 @@ class Game
     end
   end
   
+  def over?
+    if won? or draw?
+      
   
   def start 
   end

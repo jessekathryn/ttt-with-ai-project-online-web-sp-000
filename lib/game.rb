@@ -61,7 +61,7 @@ class Game
   
   def turn 
     current_player.move(board)
-    current_player
+    player = current_player.move
     if @board.valid_move?(input)
           move(input, current_player) 
         else 

@@ -25,9 +25,10 @@ class Game
   end
   
   def won?
-    draw? unless
+    if !draw?
       WIN_COMBINATIONS == "X" || WIN_COMBINATIONS == "O"
     end 
+  end 
   end
   
   def winner

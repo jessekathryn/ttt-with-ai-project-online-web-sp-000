@@ -20,7 +20,7 @@ class Game
   
  def won?
   WIN_COMBINATIONS.detect { |combo| 
-    
+    @board.cells[combo[0]]
     
   }
     

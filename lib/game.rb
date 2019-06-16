@@ -29,7 +29,6 @@ class Game
       WIN_COMBINATIONS == "X" || WIN_COMBINATIONS == "O"
     end 
   end 
-  end
   
   def winner
   end 

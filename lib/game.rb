@@ -19,7 +19,7 @@ class Game
   end
   
  def won?
-  @board == WIN_COMBINATIONS
+  WIN_COMBINATIONS.detect { |combo| 
     if @position == "X"
       player_1
     else

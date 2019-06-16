@@ -45,6 +45,7 @@ class Game
      if draw? || won?
         over = true
       end
+    over
    end
   
   def start 

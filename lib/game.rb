@@ -47,6 +47,7 @@ class Game
   
   def over?
    if draw? || won? || full?
+     true
       else 
         false
       end

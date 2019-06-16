@@ -35,7 +35,16 @@ class Game
   end
  
   def winner
-  end 
+    combo = won?
+      if !won?
+        return nil
+      elsif @board.cells[combo[0]] == "X"
+        return "X"
+      elsif @board.cells[combo[0]] == "O"
+        return "O"
+    end
+  end
+  
   
   def start 
   end

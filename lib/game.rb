@@ -1,25 +1,36 @@
 class Game
   attr_accessor :board, :player_1, :player_2
+  attr_reader :token
   
   WIN_COMBINATIONS = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [2,4,6]]  
-
-  def board=(board)
+    
+  def initialize(player_1 = Players::Human.new("X"), player_2 = Players::Human.new("O"), board = Board.new)
+    @player_1 = player_1 
+    @player_2 = player_2
     @board = board
   end
   
-  def initialize(player_1, player_2, board)
-    player_1 = Player.new
-    player_2 = Player.new
-    board = board.new
+  def current_player
+    if @board.turn_count.even? 
+      @player_1
+    else
+      @player_2
+    end
   end
   
-  def player_1=(player_1)
-    @player_1 = player_1
+  def won?
   end
   
-  def player_2=(player_2)
-    @player_2 = player_2
+  def winner
+  end 
+  
+  def start 
   end
   
+  def play 
+  end 
   
+  def turn 
+  end
+
 end

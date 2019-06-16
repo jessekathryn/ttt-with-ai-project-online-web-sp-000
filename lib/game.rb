@@ -18,12 +18,6 @@ class Game
     end
   end
   
-  def draw?
-    if !@cells[WIN_COMBINATIONS]
-      puts "Cat's Game!"
-    end
-  end
-  
   def won?
     if !draw?
       WIN_COMBINATIONS == "X" || WIN_COMBINATIONS == "O"

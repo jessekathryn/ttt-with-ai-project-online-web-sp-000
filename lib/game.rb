@@ -37,9 +37,6 @@ class Game
   def winner
     if combo = won?
       @board.cells[combo[0]] 
-        return "X"
-      elsif @board.cells[combo[0]] == "O"
-        return "O"
     end
   end
   

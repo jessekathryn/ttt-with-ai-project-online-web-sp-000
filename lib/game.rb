@@ -60,9 +60,9 @@ class Game
   end 
   
   def turn 
-    puts "Please enter 1-9:"
-      user_input = gets
-      index = input_to_i(user_input) 
+    #puts "Please enter 1-9:"
+      #user_input = gets
+      #index = input_to_i(user_input) 
         if valid_move?(index)
           move(index, current_player) 
         else 

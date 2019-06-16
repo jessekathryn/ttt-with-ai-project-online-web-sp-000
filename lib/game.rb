@@ -20,12 +20,10 @@ class Game
   
  def won?
   WIN_COMBINATIONS.detect { |combo| 
-    if @position == "X"
-      player_1
-    else
-      player_2
-  end
-    false
+    
+    
+  }
+    
   end
   
   def winner

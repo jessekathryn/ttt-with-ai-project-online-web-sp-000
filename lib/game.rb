@@ -41,10 +41,9 @@ class Game
   end
   
   def over?
-   if draw? || won? || @board.full?
-     true
-      else 
-        false
+   over = false
+     if draw? || won?
+        over = true
       end
    end
   

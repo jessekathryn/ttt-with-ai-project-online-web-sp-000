@@ -53,9 +53,8 @@ class Game
   end
   
   def play 
-    play
-  until over?
-    turn
+    until over?
+      turn
   end
     if won?
       puts "Congratulations #{winner}!"

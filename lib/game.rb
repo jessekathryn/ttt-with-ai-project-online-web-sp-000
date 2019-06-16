@@ -64,7 +64,7 @@ class Game
       #user_input = gets
       #index = input_to_i(user_input) 
         if @board.valid_move?(input)
-          move(index, current_player) 
+          move(input, current_player) 
         else 
           turn
         end

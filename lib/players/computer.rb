@@ -1,7 +1,8 @@
 module Players
   class Computer < Player
 
-def move(board) 
-   Math.rand
-  end
- end
+  def move(board) 
+    rand(9)
+    end
+ 
+end

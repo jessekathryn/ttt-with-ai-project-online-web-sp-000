@@ -42,6 +42,7 @@ class Game
   
   def over?
    if draw? || won? || @board.full?
+     true
       else 
         false
       end

@@ -21,10 +21,10 @@ class Game
  def won?
   WIN_COMBINATIONS.detect { |combo| 
     @board.cells[combo[0]] == @board.cells[combo[1]] && 
-    @board.cells[combo[1]] == @board.cells[combo[2]] &&
+    @board.cells[combo[1]] == @board.cells[combo[2]]
     
   }
-    
+  
   end
   
   def winner
